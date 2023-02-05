@@ -1,4 +1,13 @@
 "use strict";
+
+// hero section on load slide in
+const heroSection = document.querySelector(".hero--section");
+
+setTimeout(() => {
+  heroSection.classList.remove("translate-y-[100px]");
+  heroSection.classList.remove("opacity-0");
+}, 500);
+
 const features = document.querySelector(".features");
 
 // will figure out a solution for not using the querySelectorAll in this case
@@ -100,10 +109,11 @@ const validator = function (text, bgTransparent, bgColor) {
 // Burger Menu Implementation
 const burger = document.querySelector(".burger");
 const menu = document.querySelector(".menuContainer");
+const logo = document.querySelector("nav > svg > g > path");
 console.log(menu, burger);
 
 burger.addEventListener("click", function () {
-  console.log("clicked");
   burger.classList.toggle("toggle");
+  logo.classList.toggle("toggle");
   menu.classList.toggle("containerMenuOpen");
 });
