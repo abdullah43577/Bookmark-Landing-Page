@@ -10,6 +10,7 @@ link.forEach((link) => {
   });
 });
 
+// Tabbed Components
 features.addEventListener("click", function (e) {
   let clicked = e.target.closest(".feature");
   console.log(clicked);
@@ -45,12 +46,10 @@ const faqContainer = document.querySelector(".faq--container");
 
 faqContainer.addEventListener("click", (e) => {
   let clicked = e.target.closest(".faq");
-  console.log(clicked);
 
   if (!clicked) return;
-  clicked.lastElementChild.classList.toggle("hidden");
 
-  console.log(clicked.firstElementChild.children);
+  clicked.lastElementChild.classList.toggle("hidden");
   clicked.firstElementChild.children[1].classList.toggle("rotate-[360deg]");
 });
 

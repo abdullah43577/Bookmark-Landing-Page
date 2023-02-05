@@ -927,6 +927,10 @@ input[type="text"] {
   cursor: pointer;
 }
 
+.container--left > svg > g > path {
+  fill: #f3f3f3;
+}
+
 .faq picture {
   transition: transform 0.5s ease;
 }
