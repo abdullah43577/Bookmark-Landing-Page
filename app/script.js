@@ -96,3 +96,14 @@ const validator = function (text, bgTransparent, bgColor) {
   input.nextElementSibling.classList.add(bgColor);
   input.nextElementSibling.classList.add("py-1");
 };
+
+// Burger Menu Implementation
+const burger = document.querySelector(".burger");
+const menu = document.querySelector(".menuContainer");
+console.log(menu, burger);
+
+burger.addEventListener("click", function () {
+  console.log("clicked");
+  burger.classList.toggle("toggle");
+  menu.classList.toggle("containerMenuOpen");
+});
