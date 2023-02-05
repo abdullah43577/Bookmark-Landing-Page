@@ -633,6 +633,10 @@ div.activeTab > a{
   height: 40px;
 }
 
+.max-h-\[93px\]{
+  max-height: 93px;
+}
+
 .w-full{
   width: 100%;
 }
@@ -700,6 +704,22 @@ div.activeTab > a{
   border-width: 2px;
 }
 
+.border{
+  border-width: 1px;
+}
+
+.border-4{
+  border-width: 4px;
+}
+
+.border-\[1px\]{
+  border-width: 1px;
+}
+
+.border-2{
+  border-width: 2px;
+}
+
 .border-b-\[1px\]{
   border-bottom-width: 1px;
 }
@@ -710,6 +730,10 @@ div.activeTab > a{
 
 .border-t-\[5px\]{
   border-top-width: 5px;
+}
+
+.border-solid{
+  border-style: solid;
 }
 
 .border-dotted{
@@ -724,6 +748,15 @@ div.activeTab > a{
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-transparent{
+  border-color: transparent;
+}
+
+.border-softRed{
+  --tw-border-opacity: 1;
+  border-color: hsl(0 94% 66% / var(--tw-border-opacity));
 }
 
 .bg-veryDarkBlue{
