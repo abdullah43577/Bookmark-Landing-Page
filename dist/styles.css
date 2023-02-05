@@ -519,6 +519,7 @@ div.activeTab > a{
   border-bottom-width: 5px;
   --tw-border-opacity: 1;
   border-bottom-color: hsl(0 94% 66% / var(--tw-border-opacity));
+  font-weight: 500;
 }
 
 .absolute{
@@ -533,20 +534,12 @@ div.activeTab > a{
   top: 0px;
 }
 
-.right-0{
-  right: 0px;
-}
-
 .top-2{
   top: 0.5rem;
 }
 
 .right-2{
   right: 0.5rem;
-}
-
-.top-3{
-  top: 0.75rem;
 }
 
 .mx-8{
@@ -633,10 +626,6 @@ div.activeTab > a{
   height: 40px;
 }
 
-.max-h-\[93px\]{
-  max-height: 93px;
-}
-
 .w-full{
   width: 100%;
 }
@@ -700,24 +689,8 @@ div.activeTab > a{
   border-bottom-left-radius: 0.25rem;
 }
 
-.border-\[2px\]{
-  border-width: 2px;
-}
-
 .border{
   border-width: 1px;
-}
-
-.border-4{
-  border-width: 4px;
-}
-
-.border-\[1px\]{
-  border-width: 1px;
-}
-
-.border-2{
-  border-width: 2px;
 }
 
 .border-b-\[1px\]{
@@ -743,11 +716,6 @@ div.activeTab > a{
 .border-grayishBlue{
   --tw-border-opacity: 1;
   border-color: hsl(229 8% 60% / var(--tw-border-opacity));
-}
-
-.border-white{
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .border-transparent{
@@ -831,11 +799,6 @@ div.activeTab > a{
 .py-11{
   padding-top: 2.75rem;
   padding-bottom: 2.75rem;
-}
-
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .px-2{
@@ -969,23 +932,6 @@ input[type="text"] {
 
 input.error {
   border: 2px solid hsl(0, 94%, 66%);
-}
-
-.hover\:border:hover{
-  border-width: 1px;
-}
-
-.hover\:border-2:hover{
-  border-width: 2px;
-}
-
-.hover\:border-solid:hover{
-  border-style: solid;
-}
-
-.hover\:border-softRed:hover{
-  --tw-border-opacity: 1;
-  border-color: hsl(0 94% 66% / var(--tw-border-opacity));
 }
 
 .hover\:border-softBlue:hover{
@@ -1129,10 +1075,6 @@ input.error {
 
   .md\:max-w-\[500px\]{
     max-width: 500px;
-  }
-
-  .md\:max-w-\[450px\]{
-    max-width: 450px;
   }
 
   .md\:translate-y-\[50px\]{
