@@ -26,12 +26,16 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](<./screenshots/Screenshot%20(78).png>)
+![](<./screenshots/Screenshot%20(79).png>)
+![](<./screenshots/Screenshot%20(80).png>)
+![](<./screenshots/Screenshot%20(81).png>)
+![](<./screenshots/Screenshot%20(82).png>)
 
 ### Links
 
-- Solution URL: [Solution URL here](https://your-solution-url.com)
-- Live Site URL: [Live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/responsive-bookmark-landing-page-built-using-tailwindcss-and-vanillajs-tjeLmx-JPF)
+- Live Site URL: [Live site URL here](https://bookmark-landing-p.netlify.app/)
 
 ## My process
 
@@ -40,9 +44,8 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
+- [Tailwind](https://tailwindcss.com/) - CSS Framework
 
 ## Author
 
