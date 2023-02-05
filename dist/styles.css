@@ -519,7 +519,8 @@ div.activeTab > a{
   border-bottom-width: 5px;
   --tw-border-opacity: 1;
   border-bottom-color: hsl(0 94% 66% / var(--tw-border-opacity));
-  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: hsl(229 31% 21% / var(--tw-text-opacity));
 }
 
 .absolute{
