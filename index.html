@@ -120,10 +120,11 @@
           them on the go.
         </p>
         <div
-          class="feature md:mt-5 md:flex md:w-full md:items-center md:justify-center"
+          class="features md:mt-5 md:flex md:w-full md:items-center md:justify-center"
         >
           <div
-            class="feature1 activeTab flex h-auto items-center justify-center border-t-[1px] border-b-[1px] border-grayishBlue text-lg font-medium text-veryDarkBlue hover:text-softRed md:border-t-0"
+            class="feature activeTab flex h-auto items-center justify-center border-t-[1px] border-b-[1px] border-grayishBlue text-lg font-medium text-veryDarkBlue hover:text-softRed md:border-t-0"
+            data-tab="1"
           >
             <a href="#" class="borderbtm h-full w-[200px] py-[20px]"
               >Simple Bookmarking</a
@@ -131,7 +132,8 @@
           </div>
 
           <div
-            class="flex h-auto items-center justify-center border-t-[1px] border-b-[1px] border-grayishBlue text-lg font-medium text-grayishBlue hover:text-softRed md:border-t-0"
+            class="feature flex h-auto items-center justify-center border-t-[1px] border-b-[1px] border-grayishBlue text-lg font-medium text-grayishBlue hover:text-softRed md:border-t-0"
+            data-tab="2"
           >
             <a href="#" class="borderbtm h-full w-[200px] py-[20px]"
               >Speedy Searching</a
@@ -139,7 +141,8 @@
           </div>
 
           <div
-            class="flex h-auto items-center justify-center border-t-[1px] border-b-[1px] border-grayishBlue text-lg font-medium text-grayishBlue hover:text-softRed md:border-t-0"
+            class="feature flex h-auto items-center justify-center border-t-[1px] border-b-[1px] border-grayishBlue text-lg font-medium text-grayishBlue hover:text-softRed md:border-t-0"
+            data-tab="3"
           >
             <a href="#" class="borderbtm h-full w-[200px] py-[20px]"
               >Easy Sharing</a
@@ -147,84 +150,86 @@
           </div>
         </div>
 
-        <div
-          class="component mt-16 flex flex-col items-center md:flex-row md:justify-between"
-        >
-          <picture class="w-[330px] md:w-2/5">
-            <img
-              src="./images/illustration-features-tab-1.svg"
-              alt="illustration-features-tab-1"
-              class="w-full"
-            />
-          </picture>
-          <div class="comp--content md:ml-[100px] md:w-1/2">
-            <h2 class="mt-16 text-2xl font-medium md:text-left">
-              Bookmark in one click
-            </h2>
-            <p class="my-4 text-grayishBlue md:max-w-[500px] md:text-left">
-              Organize your bookmarks however you like. Our simple drag-and-drop
-              interface gives you complete control over how you manage your
-              favourite sites.
-            </p>
-            <button
-              class="hidden rounded bg-softBlue px-4 py-3 text-white hover:border hover:border-solid hover:border-softBlue hover:bg-transparent hover:text-softBlue md:block"
-            >
-              More Info
-            </button>
+        <div class="section--component">
+          <div
+            class="component component--1 mt-16 flex flex-col items-center md:flex-row md:justify-between"
+          >
+            <picture class="w-[330px] md:w-2/5">
+              <img
+                src="./images/illustration-features-tab-1.svg"
+                alt="illustration-features-tab-1"
+                class="w-full"
+              />
+            </picture>
+            <div class="comp--content md:ml-[100px] md:w-1/2">
+              <h2 class="mt-16 text-2xl font-medium md:text-left">
+                Bookmark in one click
+              </h2>
+              <p class="my-4 text-grayishBlue md:max-w-[500px] md:text-left">
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <button
+                class="hidden rounded bg-softBlue px-4 py-3 text-white hover:border hover:border-solid hover:border-softBlue hover:bg-transparent hover:text-softBlue md:block"
+              >
+                More Info
+              </button>
+            </div>
           </div>
-        </div>
 
-        <!-- refactor code in the same block later on -->
-        <div
-          class="component mt-16 hidden flex-col items-center md:flex-row md:justify-between"
-        >
-          <picture class="w-[330px] md:w-2/5">
-            <img
-              src="./images/illustration-features-tab-2.svg"
-              alt="illustration-features-tab-2"
-              class="w-full"
-            />
-          </picture>
-          <div class="comp--content md:ml-[100px] md:w-1/2">
-            <h2 class="mt-16 text-2xl font-medium md:text-left">
-              Intelligent search
-            </h2>
-            <p class="my-4 text-grayishBlue md:max-w-[500px] md:text-left">
-              Our powerful search feature will help you find saved sites in no
-              time at all. No need to trawl through all of your bookmarks.
-            </p>
-            <button
-              class="hidden rounded bg-softBlue px-4 py-3 text-white hover:border hover:border-solid hover:border-softBlue hover:bg-transparent hover:text-softBlue md:block"
-            >
-              More Info
-            </button>
+          <!-- refactor code in the same block later on -->
+          <div
+            class="component component--2 mt-16 hidden flex-col items-center md:flex-row md:justify-between"
+          >
+            <picture class="w-[330px] md:w-2/5">
+              <img
+                src="./images/illustration-features-tab-2.svg"
+                alt="illustration-features-tab-2"
+                class="w-full"
+              />
+            </picture>
+            <div class="comp--content md:ml-[100px] md:w-1/2">
+              <h2 class="mt-16 text-2xl font-medium md:text-left">
+                Intelligent search
+              </h2>
+              <p class="my-4 text-grayishBlue md:max-w-[500px] md:text-left">
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
+              </p>
+              <button
+                class="hidden rounded bg-softBlue px-4 py-3 text-white hover:border hover:border-solid hover:border-softBlue hover:bg-transparent hover:text-softBlue md:block"
+              >
+                More Info
+              </button>
+            </div>
           </div>
-        </div>
 
-        <!-- refactor code in the same block later on -->
-        <div
-          class="component mt-16 hidden flex-col items-center md:flex-row md:justify-between"
-        >
-          <picture class="w-[330px] md:w-2/5">
-            <img
-              src="./images/illustration-features-tab-3.svg"
-              alt="illustration-features-tab-3"
-              class="w-full"
-            />
-          </picture>
-          <div class="comp--content md:ml-[100px] md:w-1/2">
-            <h2 class="mt-16 text-2xl font-medium md:text-left">
-              Share your bookmarks
-            </h2>
-            <p class="my-4 text-grayishBlue md:max-w-[500px] md:text-left">
-              Easily share your bookmarks and collections with others. Create a
-              shareable link that you can send at the click of a button.
-            </p>
-            <button
-              class="hidden rounded bg-softBlue px-4 py-3 text-white hover:border hover:border-solid hover:border-softBlue hover:bg-transparent hover:text-softBlue md:block"
-            >
-              More Info
-            </button>
+          <!-- refactor code in the same block later on -->
+          <div
+            class="component component--3 mt-16 hidden flex-col items-center md:flex-row md:justify-between"
+          >
+            <picture class="w-[330px] md:w-2/5">
+              <img
+                src="./images/illustration-features-tab-3.svg"
+                alt="illustration-features-tab-3"
+                class="w-full"
+              />
+            </picture>
+            <div class="comp--content md:ml-[100px] md:w-1/2">
+              <h2 class="mt-16 text-2xl font-medium md:text-left">
+                Share your bookmarks
+              </h2>
+              <p class="my-4 text-grayishBlue md:max-w-[500px] md:text-left">
+                Easily share your bookmarks and collections with others. Create
+                a shareable link that you can send at the click of a button.
+              </p>
+              <button
+                class="hidden rounded bg-softBlue px-4 py-3 text-white hover:border hover:border-solid hover:border-softBlue hover:bg-transparent hover:text-softBlue md:block"
+              >
+                More Info
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -263,7 +268,7 @@
           </div>
 
           <div
-            class="mozila mt-8 flex flex-col items-center justify-center rounded py-4 md:translate-y-[50px]"
+            class="mozilla mt-8 flex flex-col items-center justify-center rounded py-4 md:translate-y-[50px]"
           >
             <picture>
               <img src="./images/logo-firefox.svg" alt="logo-firefox" />
@@ -319,18 +324,19 @@
         <div class="faq--container w-full md:max-w-[500px]">
           <!-- Question 1 -->
           <div
-            class="faq1 cursor-pointer border-b-[1px] border-grayishBlue hover:text-softRed"
+            class="faq cursor-pointer border-b-[1px] border-grayishBlue hover:text-softRed"
+            data-tab="1"
           >
             <div
-              class="faq flex items-center justify-between border-b-[1px] border-grayishBlue py-5"
+              class="faq1 flex items-center justify-between border-b-[1px] border-grayishBlue py-5"
             >
               <h2>What is Bookmark?</h2>
-              <picture>
+              <picture class="rotate-[180deg]">
                 <img src="./images/icon-arrow.svg" alt="icon-arrow" />
               </picture>
             </div>
-            <div class="faq--ans hidden py-5">
-              <blockquote class="text-left">
+            <div class="faq--ans--1 hidden py-5">
+              <blockquote class="text-left text-grayishBlue">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 tincidunt justo eget ultricies fringilla. Phasellus blandit
                 ipsum quis quam ornare mattis.
@@ -340,18 +346,19 @@
 
           <!-- Question 2 -->
           <div
-            class="faq2 cursor-pointer border-b-[1px] border-grayishBlue hover:text-softRed"
+            class="faq cursor-pointer border-b-[1px] border-grayishBlue hover:text-softRed"
+            data-tab="2"
           >
             <div
-              class="faq flex items-center justify-between border-b-[1px] border-grayishBlue py-5"
+              class="faq2 flex items-center justify-between border-b-[1px] border-grayishBlue py-5"
             >
               <h2>How can I request a new browser?</h2>
-              <picture>
+              <picture class="rotate-[180deg]">
                 <img src="./images/icon-arrow.svg" alt="icon-arrow" />
               </picture>
             </div>
-            <div class="faq--ans hidden py-5">
-              <blockquote class="text-left">
+            <div class="faq--ans--2 hidden py-5">
+              <blockquote class="text-left text-grayishBlue">
                 Vivamus luctus eros aliquet convallis ultricies. Mauris augue
                 massa, ultricies non ligula. Suspendisse imperdiet. Vivamus
                 luctus eros aliquet convallis ultricies. Mauris augue massa,
@@ -364,18 +371,19 @@
 
           <!-- Question 3 -->
           <div
-            class="faq3 cursor-pointer border-b-[1px] border-grayishBlue hover:text-softRed"
+            class="faq cursor-pointer border-b-[1px] border-grayishBlue hover:text-softRed"
+            data-tab="3"
           >
             <div
-              class="faq flex items-center justify-between border-b-[1px] border-grayishBlue py-5"
+              class="faq3 flex items-center justify-between border-b-[1px] border-grayishBlue py-5"
             >
               <h2>Is there a mobile app?</h2>
-              <picture>
+              <picture class="rotate-[180deg]">
                 <img src="./images/icon-arrow.svg" alt="icon-arrow" />
               </picture>
             </div>
-            <div class="faq--ans hidden py-5">
-              <blockquote class="text-left">
+            <div class="faq--ans--3 hidden py-5">
+              <blockquote class="text-left text-grayishBlue">
                 Sed consectetur quam id neque fermentum accumsan. Praesent
                 luctus vestibulum dolor, ut condimentum urna vulputate eget.
                 Cras in ligula quis est pharetra mattis sit amet pharetra purus.
@@ -386,18 +394,19 @@
 
           <!-- Question 4 -->
           <div
-            class="faq4 cursor-pointer border-b-[1px] border-grayishBlue hover:text-softRed"
+            class="faq cursor-pointer border-b-[1px] border-grayishBlue hover:text-softRed"
+            data-tab="4"
           >
             <div
-              class="faq flex items-center justify-between border-b-[1px] border-grayishBlue py-5"
+              class="faq4 flex items-center justify-between border-b-[1px] border-grayishBlue py-5"
             >
               <h2>What about other Chromium browsers?</h2>
-              <picture>
+              <picture class="rotate-[180deg]">
                 <img src="./images/icon-arrow.svg" alt="icon-arrow" />
               </picture>
             </div>
-            <div class="faq--ans hidden py-5">
-              <blockquote class="text-left">
+            <div class="faq--ans--4 hidden py-5">
+              <blockquote class="text-left text-grayishBlue">
                 Integer condimentum ipsum id imperdiet finibus. Vivamus in
                 placerat mi, at euismod dui. Aliquam vitae neque eget nisl
                 gravida pellentesque non ut velit.
@@ -418,23 +427,31 @@
         class="mt-44 flex w-full flex-col items-center justify-center bg-softBlue"
       >
         <div
-          class="section--content flex h-full flex-col items-center justify-center py-11 px-8 text-center md:max-w-[450px]"
+          class="section--content flex h-full w-full flex-col items-center justify-center py-11 px-8 text-center md:max-w-[500px] lg:max-w-[700px]"
         >
           <p class="text-sm uppercase tracking-[5px] text-white">
             35,000+ already joined
           </p>
-          <h2 class="my-4 text-2xl font-medium text-white">
+          <h2 class="my-4 text-2xl font-medium text-white lg:text-3xl">
             Stay up-to-date with what we’re doing
           </h2>
           <form
             action=""
-            class="flex w-full flex-col items-center justify-center md:flex-row"
+            class="flex flex-col items-center justify-center md:flex-row"
           >
-            <input
-              type="text"
-              placeholder="Enter your email address"
-              class="h-[40px] w-full rounded px-4 md:w-auto"
-            />
+            <div class="input--container relative">
+              <input
+                type="text"
+                placeholder="Enter your email address"
+                class="h-[40px] w-full rounded px-4 md:w-auto lg:w-[300px]"
+              />
+              <p
+                class="w-full rounded-b px-2 text-left text-xs italic text-white"
+              ></p>
+              <picture class="errorimg absolute top-2 right-2 hidden">
+                <img src="./images/icon-error.svg" alt="icon-error" />
+              </picture>
+            </div>
             <button
               class="mt-4 w-full rounded bg-softRed px-4 py-3 font-medium text-white hover:border-2 hover:border-solid hover:border-softRed hover:bg-white hover:text-softRed md:mt-0 md:ml-5 md:h-[40px] md:w-auto md:py-0"
             >
