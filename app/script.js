@@ -1,16 +1,6 @@
 "use strict";
 
-// hero section on load slide in
-const heroSection = document.querySelector(".hero--section");
-
-setTimeout(() => {
-  heroSection.classList.remove("translate-y-[100px]");
-  heroSection.classList.remove("opacity-0");
-}, 500);
-
-const features = document.querySelector(".features");
-
-// will figure out a solution for not using the querySelectorAll in this case
+// Removing default behavious of links
 const link = document.querySelectorAll("a");
 
 link.forEach((link) => {
@@ -19,15 +9,46 @@ link.forEach((link) => {
   });
 });
 
+// hero section on load slide in
+const heroSection = document.querySelector(".hero--section");
+
+setTimeout(() => {
+  heroSection.classList.remove("translate-y-[100px]");
+  heroSection.classList.remove("opacity-0");
+}, 500);
+
+// slide up transitions on page sections
+const featuresSect = document.getElementById("section1");
+const extension = document.getElementById("section2");
+const faqSect = document.getElementById("section3");
+
+const revealSection = function (entries, observer) {
+  let [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+
+  entry.target.classList.remove("translate-y-[100px]");
+  entry.target.classList.remove("opacity-0");
+
+  observer.unobserve(entry.target);
+};
+
+const observer = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.1,
+});
+observer.observe(featuresSect.children[0]);
+observer.observe(featuresSect.children[1]);
+observer.observe(extension.children[0]);
+observer.observe(extension.children[1]);
+observer.observe(faqSect.children[0]);
+observer.observe(faqSect.children[1]);
+
+const features = document.querySelector(".features");
+
 // Tabbed Components
 features.addEventListener("click", function (e) {
   let clicked = e.target.closest(".feature");
-  console.log(clicked);
-  //   let [child] = clicked.children;
-  //   console.log(child);
-  //   child.addEventListener("click", (e) => {
-  //     e.preventDefault();
-  //   });
   if (!clicked) return;
 
   // remove active classes

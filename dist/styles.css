@@ -531,6 +531,18 @@ div.activeTab > a{
   position: relative;
 }
 
+.right-0{
+  right: 0px;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.left-0{
+  left: 0px;
+}
+
 .top-2{
   top: 0.5rem;
 }
@@ -539,52 +551,20 @@ div.activeTab > a{
   right: 0.5rem;
 }
 
-.right-0{
-  right: 0px;
-}
-
-.top-3{
-  top: 0.75rem;
-}
-
-.top-6{
-  top: 1.5rem;
-}
-
-.top-4{
-  top: 1rem;
-}
-
-.top-5{
-  top: 1.25rem;
-}
-
-.top-0{
-  top: 0px;
-}
-
-.top-\[100px\]{
-  top: 100px;
-}
-
-.top-\[80px\]{
-  top: 80px;
-}
-
-.top-\[50px\]{
-  top: 50px;
-}
-
-.left-0{
-  left: 0px;
-}
-
 .z-10{
   z-index: 10;
 }
 
+.z-0{
+  z-index: 0;
+}
+
 .-z-10{
   z-index: -10;
+}
+
+.z-\[-555\]{
+  z-index: -555;
 }
 
 .mx-8{
@@ -659,6 +639,10 @@ div.activeTab > a{
   height: 100%;
 }
 
+.h-\[150px\]{
+  height: 150px;
+}
+
 .h-auto{
   height: auto;
 }
@@ -667,24 +651,12 @@ div.activeTab > a{
   height: 40px;
 }
 
-.h-\[200px\]{
-  height: 200px;
-}
-
-.h-\[220px\]{
-  height: 220px;
-}
-
-.h-\[150px\]{
-  height: 150px;
-}
-
-.h-\[120px\]{
-  height: 120px;
-}
-
 .w-full{
   width: 100%;
+}
+
+.w-\[90\%\]{
+  width: 90%;
 }
 
 .w-\[200px\]{
@@ -693,26 +665,6 @@ div.activeTab > a{
 
 .w-\[330px\]{
   width: 330px;
-}
-
-.w-\[300px\]{
-  width: 300px;
-}
-
-.w-\[350px\]{
-  width: 350px;
-}
-
-.w-\[280px\]{
-  width: 280px;
-}
-
-.w-1\/2{
-  width: 50%;
-}
-
-.w-\[90\%\]{
-  width: 90%;
 }
 
 .max-w-full{
@@ -724,23 +676,8 @@ div.activeTab > a{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-y-\[-40px\]{
-  --tw-translate-y: -40px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-\[40px\]{
-  --tw-translate-y: 40px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .translate-y-\[80px\]{
   --tw-translate-y: 80px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-\[50px\]{
-  --tw-translate-y: 50px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -789,18 +726,6 @@ div.activeTab > a{
 .rounded-b{
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
-}
-
-.rounded-bl-full{
-  border-bottom-left-radius: 9999px;
-}
-
-.rounded-bl-2xl{
-  border-bottom-left-radius: 1rem;
-}
-
-.rounded-bl-\[50px\]{
-  border-bottom-left-radius: 50px;
 }
 
 .rounded-bl-\[100px\]{
@@ -1150,6 +1075,7 @@ div.containerMenuOpen {
     padding: 0;
     padding-top: 0;
     transform: translateX(0%);
+    z-index: 9;
   }
 
   div.menuContainer > .social--icons {
@@ -1172,6 +1098,15 @@ div.containerMenuOpen {
 }
 
 .hero--section {
+  transition: transform 1s ease;
+}
+
+#section1 > h2,
+#section1 > p,
+#section2 > h2,
+#section2 > p,
+#section3 > h2,
+#section3 > p {
   transition: transform 1s ease;
 }
 
@@ -1205,29 +1140,8 @@ div.containerMenuOpen {
 }
 
 @media (min-width: 480px){
-  .sm\:h-\[280px\]{
-    height: 280px;
-  }
-
-  .sm\:h-\[300px\]{
-    height: 300px;
-  }
-
   .sm\:h-\[200px\]{
     height: 200px;
-  }
-
-  .sm\:w-\[400px\]{
-    width: 400px;
-  }
-
-  .sm\:w-\[500px\]{
-    width: 500px;
-  }
-
-  .sm\:translate-y-\[80px\]{
-    --tw-translate-y: 80px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .sm\:translate-y-\[50px\]{
@@ -1456,12 +1370,12 @@ div.containerMenuOpen {
     height: 250px;
   }
 
-  .lg\:w-\[300px\]{
-    width: 300px;
-  }
-
   .lg\:w-\[400px\]{
     width: 400px;
+  }
+
+  .lg\:w-\[300px\]{
+    width: 300px;
   }
 
   .lg\:max-w-\[700px\]{
